@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.com/baseli/ddns.svg?branch=master)](https://travis-ci.com/baseli/ddns)
+
 ## 腾讯云 `ddns` 插件
 > 起因：想用家用宽带 + `ipv6` 做个文件分享服务器
 
