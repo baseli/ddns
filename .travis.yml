@@ -1,0 +1,18 @@
+language: go
+
+go:
+  - 1.13.x
+env:
+  - GO111MODULE=on
+
+before_deploy: make
+
+deploy:
+  provider: releases
+  api_key:
+    secure: aFznlrwIWHHzeko3LDYrburVZzhRULWAATMWcuKR2IyNxC/ZRFUuYB5c0tswe4+7X78r7CVJqYvGrfw1Q/G/h2fKL4J3gZw+hr//YjL6iWY/8ItyjlpTw0oA3SertdH7LppPXHIqRNNmSlw3yli0Coq1a2PVRiW4nVl43SLvzQBX0oKldmnG02gZN/iaFTSkoxzUF2LsvkgOmpIZ6pWKLP8QkBs3nkGU3mNdbDStvowKVFm4vvz9GpIpIOrY1Lg1KcNPxukH2tBWZuTZW7SmtMBRysBeMoO1GE8xgXh5vu11MwxyxdxwxuWczmTd1RhFlZth+AcyTvLvm1HbcMt2fjchP3aaj3EQn1re7CylNiGiM8cJ54h2RuyWyfx6kT1iLarLO8Szm8gxR17oxh7thISoaE/AsttDLEhUG3VPl473bsy6Wbgyjj6FOQsdRGpuYNVt9a/TKqlPnx45XgLvTtYzz+sNH/y8uk3HiyjtgKR95GOnAqvRVDyAhc8ujwvprx9gpeIlyKeAs5dZggnbuK/8cSJe+OIEkLUvhSRYtiY1luUhepx1Iu5i5m0V4htphGbmAu2YLgsepYOQGrUG5ogz6ZG/e78n7T1GVOoxvg35nA+MMV4lqKcQqhAJsj+xR8SzgcMf2khuDX3kiMW0CRWDh9obYMtROL1eUBvOOiQ=
+  file: build/*
+  on:
+    repo: baseli/ddns
+    tags: true
+  skip_cleanup: true
