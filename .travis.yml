@@ -12,6 +12,7 @@ deploy:
   api_key:
     secure: QApPY4ghLWOtE9AecrXNBSCzr/YPhzmEKSOTGhc6s/YBoANWvkm1PT3Y+eLqmH5/Fe++i/Z97b0ybRS/+qvn2ojUIEv4G4+Hca8HlwX2ETYx/YSv0fazQQz03VnABV8YyK9FOMjLKX9bCf3bR5u69g5jh4kbBokR/SH0cJEHNSIRDXk7hV5rzijYw6THa9QoESgO2uUT8gyJKKBA898LYwq3Ym612ci67hHXMrlG1Nt3jF55XyQplmzTv2enXNn+zaTb7Z69TmIkM6Xgyp43veS5/kEFrdpHVx54xbl4Lv5HE5cFOWiT1Gfy+EGepyaj0CU6cXhkxOKuw/VSXoxQ6arNsZq/zxu2m+gaW/3KL7E0mf32/GeM1azJ0LVXMKqTZJSuA8feMgl7bpiOqnnt1bE5V0m9AlbvmahvZaPmGF6G322QAihvvSNYooiQj/SWh23Fbkc0AV/CERRwYMNmhVIGqGEPiXpi4vX/8uPa/6MVxZjRqH4Rp47rASb+imZM+vVxj9wN6wgyfqDR1sEc1CVu1nxDUFWZX5raNBKpdhVTWbuByOxCZOtANdwnOqMobGG1cMcxdIoRjCKwslXJ1KGLxkBVSfhjUPb5Jy45j6nwDHsImCu20XtFEhOKU3fw9ZEiS01dj/AQEXd4aCPvgMI6oKNUSqzcql0xUf30jXw=
   file: build/*
+  file_glob: true
   on:
     repo: baseli/ddns
   skip_cleanup: 'true'
