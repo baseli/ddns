@@ -2,17 +2,16 @@ language: go
 
 go:
   - 1.13.x
+
 env:
   - GO111MODULE=on
 
 before_deploy: make
-
 deploy:
   provider: releases
   api_key:
-    secure: aFznlrwIWHHzeko3LDYrburVZzhRULWAATMWcuKR2IyNxC/ZRFUuYB5c0tswe4+7X78r7CVJqYvGrfw1Q/G/h2fKL4J3gZw+hr//YjL6iWY/8ItyjlpTw0oA3SertdH7LppPXHIqRNNmSlw3yli0Coq1a2PVRiW4nVl43SLvzQBX0oKldmnG02gZN/iaFTSkoxzUF2LsvkgOmpIZ6pWKLP8QkBs3nkGU3mNdbDStvowKVFm4vvz9GpIpIOrY1Lg1KcNPxukH2tBWZuTZW7SmtMBRysBeMoO1GE8xgXh5vu11MwxyxdxwxuWczmTd1RhFlZth+AcyTvLvm1HbcMt2fjchP3aaj3EQn1re7CylNiGiM8cJ54h2RuyWyfx6kT1iLarLO8Szm8gxR17oxh7thISoaE/AsttDLEhUG3VPl473bsy6Wbgyjj6FOQsdRGpuYNVt9a/TKqlPnx45XgLvTtYzz+sNH/y8uk3HiyjtgKR95GOnAqvRVDyAhc8ujwvprx9gpeIlyKeAs5dZggnbuK/8cSJe+OIEkLUvhSRYtiY1luUhepx1Iu5i5m0V4htphGbmAu2YLgsepYOQGrUG5ogz6ZG/e78n7T1GVOoxvg35nA+MMV4lqKcQqhAJsj+xR8SzgcMf2khuDX3kiMW0CRWDh9obYMtROL1eUBvOOiQ=
+    secure: QApPY4ghLWOtE9AecrXNBSCzr/YPhzmEKSOTGhc6s/YBoANWvkm1PT3Y+eLqmH5/Fe++i/Z97b0ybRS/+qvn2ojUIEv4G4+Hca8HlwX2ETYx/YSv0fazQQz03VnABV8YyK9FOMjLKX9bCf3bR5u69g5jh4kbBokR/SH0cJEHNSIRDXk7hV5rzijYw6THa9QoESgO2uUT8gyJKKBA898LYwq3Ym612ci67hHXMrlG1Nt3jF55XyQplmzTv2enXNn+zaTb7Z69TmIkM6Xgyp43veS5/kEFrdpHVx54xbl4Lv5HE5cFOWiT1Gfy+EGepyaj0CU6cXhkxOKuw/VSXoxQ6arNsZq/zxu2m+gaW/3KL7E0mf32/GeM1azJ0LVXMKqTZJSuA8feMgl7bpiOqnnt1bE5V0m9AlbvmahvZaPmGF6G322QAihvvSNYooiQj/SWh23Fbkc0AV/CERRwYMNmhVIGqGEPiXpi4vX/8uPa/6MVxZjRqH4Rp47rASb+imZM+vVxj9wN6wgyfqDR1sEc1CVu1nxDUFWZX5raNBKpdhVTWbuByOxCZOtANdwnOqMobGG1cMcxdIoRjCKwslXJ1KGLxkBVSfhjUPb5Jy45j6nwDHsImCu20XtFEhOKU3fw9ZEiS01dj/AQEXd4aCPvgMI6oKNUSqzcql0xUf30jXw=
   file: build/*
   on:
     repo: baseli/ddns
-    tags: true
-  skip_cleanup: true
+  skip_cleanup: 'true'
