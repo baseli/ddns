@@ -14,4 +14,5 @@ deploy:
   file_glob: true
   on:
     repo: baseli/ddns
+    tags: true
   skip_cleanup: 'true'
